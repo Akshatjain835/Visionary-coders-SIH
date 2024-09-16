@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Annual Report Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Annual Report Preparation Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#reports">Generate Report</a></li>
+                <li><a href="#collaborate">Collaborate</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="container">
+            <h2>Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="chart-container">
+                    <h3>Academic Performance</h3>
+                    <canvas id="performanceChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Research Publications</h3>
+                    <canvas id="researchChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Financial Overview</h3>
+                    <canvas id="financeChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="reports" class="container">
+            <h2>Generate Report</h2>
+            <button onclick="generateReport()">Generate Annual Report</button>
+        </section>
+
+        <section id="collaborate" class="container">
+            <h2>Collaborate with Stakeholders</h2>
+            <p>Invite stakeholders to review and edit report content.</p>
+            <button>Invite Members</button>
+        </section>
+
+        <section id="feedback" class="container">
+            <h2>Feedback</h2>
+            <p>Submit your feedback on the report or suggest improvements.</p>
+            <button>Submit Feedback</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Institute Annual Report Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
